@@ -1,0 +1,208 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Language Selection Styling */
+.language-selection {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.language-selection label {
+    font-size: 14px;
+    color: #555;
+}
+
+#language-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Input Section Styling */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #80bdff;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s;
+    flex-shrink: 0; /* Prevents the button from shrinking */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Task List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Task Button Styling */
+li button {
+    background-color: #dc3545;
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+/* Archive List Styling */
+#archive-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    padding-top: 15px;
+}
+
+#archive-list li {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Text Characteristics Styling */
+#task-list li span {
+    font-weight: bold;
+}
+
+#archive-list li span {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+/* Clear Archive Button Styling */
+#clear-archive-btn {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#clear-archive-btn:hover {
+    background-color: #e55347;
+}
+
+/* Clear Archive Button */
+#clear-archive-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#clear-archive-btn:hover {
+    background-color: #e60000;
+}
